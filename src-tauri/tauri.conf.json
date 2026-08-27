@@ -1,12 +1,12 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Medusa POS",
+  "productName": "TYCHE POS",
   "version": "../package.json",
   "identifier": "ge.nari.medusa-pos",
   "build": {
-    "beforeDevCommand": "yarn dev",
+    "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:3000",
-    "beforeBuildCommand": "yarn build",
+    "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist",
     "removeUnusedCommands": false
   },

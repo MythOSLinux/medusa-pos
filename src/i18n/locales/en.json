@@ -39,6 +39,7 @@
   "nav": {
     "pos": "POS",
     "orders": "Orders",
+    "product_photos": "Photos",
     "settings": "Settings",
     "logout": "Log out"
   },
@@ -206,6 +207,14 @@
     "pay_later_confirm_message": "The order will be created and delivered now. Payment stays outstanding and can be recorded later from the order.",
     "register_closed": "Open the register before making a sale.",
     "rounded_from": "Rounded from"
+  },
+  "product_photos": {
+    "title": "Product Photos",
+    "search_placeholder": "Search products...",
+    "change_product": "Change",
+    "take_photo": "Take Photo",
+    "upload_image": "Upload Image",
+    "upload_success": "Photo added to product"
   },
   "orders": {
     "search_placeholder": "Search orders...",

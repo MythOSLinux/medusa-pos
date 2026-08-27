@@ -35,6 +35,18 @@
         },
         {
           "url": "http://localhost:*"
+        },
+        {
+          "url": "http://10.0.0.68:*"
+        },
+        {
+          "url": "https://10.0.0.68:*"
+        },
+        {
+          "url": "http://10.0.0.68:*/**"
+        },
+        {
+          "url": "https://10.0.0.68:*/**"
         }
       ],
       "identifier": "http:allow-fetch"

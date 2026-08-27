@@ -31,7 +31,10 @@ serde_json = "1"
 # Shared POS peripheral layer (ESC/POS printing, USB enumeration, Windows
 # spooler, keyboard detection). Consumed library-style — the plugin's `init()`
 # is deliberately not registered, so this app keeps its own command names.
-tauri-plugin-pos-hardware = { git = "https://github.com/narisolutions/pos-toolkit", branch = "main" }
+# Forked to MythOSLinux/pos-toolkit 2026-08-26 to add an Android arm to
+# keyboard.rs (upstream had none -- Android builds failed to compile
+# outright without it). Re-point at upstream if/when this lands there.
+tauri-plugin-pos-hardware = { git = "https://github.com/MythOSLinux/pos-toolkit", branch = "main" }
 tauri-plugin-http = "2.5.9"
 tauri-plugin-fs = "2.4"
 tauri-plugin-dialog = "2.7"

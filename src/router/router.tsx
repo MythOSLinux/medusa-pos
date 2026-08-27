@@ -17,6 +17,7 @@ const Orders = lazy(() => import("@/pages/orders"));
 const Checkout = lazy(() => import("@/pages/checkout"));
 const Settings = lazy(() => import("@/pages/settings"));
 const Order = lazy(() => import("@/pages/order"));
+const ProductPhotos = lazy(() => import("@/pages/product-photos"));
 
 const PageFallback = () => (
   <div className="flex h-full min-h-[50vh] items-center justify-center">
@@ -47,6 +48,7 @@ const router = createHashRouter(
         <Route path="orders/:orderId" element={page(<Order />)} />
         <Route path="checkout" element={page(<Checkout />)} />
         <Route path="settings" element={page(<Settings />)} />
+        <Route path="product-photos" element={page(<ProductPhotos />)} />
         {plugins.map(
           (plugin) =>
             plugin.route && (

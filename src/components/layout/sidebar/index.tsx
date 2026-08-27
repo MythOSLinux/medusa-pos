@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/sidebar";
 import { useUser } from "@/context/user";
 import { NavLink, useNavigate } from "react-router-dom";
-import { ChevronLeft, LogOut, Settings } from "lucide-react";
+import { Camera, ChevronLeft, LogOut, Settings } from "lucide-react";
 import Payments from "@/assets/icons/payments";
 import Checkout from "@/assets/icons/checkout";
 import { useUnfulfilledOrdersCount } from "@/hooks/queries/useUnfulfilledOrdersCount";
@@ -28,6 +28,12 @@ const AppSidebar = () => {
   const mainMenuItems = [
     { id: "checkout", label: t("nav.pos"), to: "/checkout", icon: Checkout },
     { id: "orders", label: t("nav.orders"), to: "/orders", icon: Payments },
+    {
+      id: "product-photos",
+      label: t("nav.product_photos"),
+      to: "/product-photos",
+      icon: Camera,
+    },
   ];
 
   const bottomMenuItems = [

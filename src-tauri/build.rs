@@ -3,6 +3,14 @@ use std::fs;
 use std::path::Path;
 
 fn main() {
+    // Without this, Cargo has no way to know this script depends on
+    // TAURI_HTTP_ALLOWLIST and may skip re-running it on a rebuild where only
+    // that env var changed -- confirmed 2026-08-26: setting a new allowlist
+    // silently had zero effect until build.rs itself was touched to force a
+    // re-run. This directive is the real fix; touching the file was a
+    // one-off workaround, not something to rely on going forward.
+    println!("cargo:rerun-if-env-changed=TAURI_HTTP_ALLOWLIST");
+
     // Read the TAURI_HTTP_ALLOWLIST environment variable
     // Cargo sets PROFILE to "debug" for dev builds and "release" for production
     let is_dev = env::var("PROFILE").unwrap_or_default() != "release";

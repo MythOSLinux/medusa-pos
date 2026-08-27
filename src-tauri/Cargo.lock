@@ -5133,7 +5133,7 @@ dependencies = [
 [[package]]
 name = "tauri-plugin-pos-hardware"
 version = "0.1.0"
-source = "git+https://github.com/narisolutions/pos-toolkit?branch=main#d9c78da85b83065ec3a8baa48f1e734afbc3190c"
+source = "git+https://github.com/MythOSLinux/pos-toolkit?branch=main#9dd53e685445f78d98765c2794e97ca1bb5552cf"
 dependencies = [
  "escpos",
  "log",
