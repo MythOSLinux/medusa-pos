@@ -99,5 +99,8 @@
   },
   "resolutions": {
     "vitest/vite": "8.1.5"
+  },
+  "overrides": {
+    "dompurify": "^3.4.16"
   }
 }
